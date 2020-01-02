@@ -23,6 +23,7 @@ function partition(&$a, $l, $r): int
 
     for ($j = $l; $j < $r; ++$j) {
         if ($a[$j] < $pivot) {
+            ///交换数组中的两个元素
             [$a[$j], $a[$i]] = [$a[$i], $a[$j]];
             ++$i;
       }

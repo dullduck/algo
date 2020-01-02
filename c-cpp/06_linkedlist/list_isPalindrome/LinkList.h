@@ -7,7 +7,7 @@ typedef char ElemType;
 typedef struct LNode 
 {
 	ElemType data;
-	struct LNode*next;
+	struct LNode *next;
 }LinkList;
 
 void CreateListHead(LinkList *&L,ElemType a[],int n);

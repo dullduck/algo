@@ -67,6 +67,10 @@ Class SingleLinkedListAlgo
      */
     public function reverse()
     {
+        ///处理异常的三种情况
+        //1、list为空
+        //2、head为空
+        //3、只有一个元素（无需反转）
         if (null == $this->list || null == $this->list->head || null == $this->list->head->next) {
             return false;
         }
